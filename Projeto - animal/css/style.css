@@ -1,0 +1,160 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #023e8a; 
+    color: white; 
+    scroll-behavior: smooth; 
+}
+
+/* Cabeçalho */
+.header {
+    background: linear-gradient(180deg, #021758, #0b066d);
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    border-bottom: 3px solid #caf0f8; 
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #428bd8;
+    color: #023e8a;
+}
+
+/* Seções */
+.section {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #0077b6;
+    color: white; 
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #90e0ef;
+}
+
+.section p {
+    font-size: 1.1rem;
+    color: #dff6ff; 
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section:nth-child(even) {
+    background-color: #0096c7;
+    color: white;
+}
+
+/* Botões */
+button {
+    background-color: #082961;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #39c7dd;
+    color: #023e8a;
+}
+
+/* Rodapé */
+.footer {
+    background: linear-gradient(180deg, #023e8a, #0077b6);
+    color: #dff6ff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer a {
+    color: #90e0ef;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #caf0f8;
+}
+
+/* Imagens (Galeria futura) */
+.section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .section h2 {
+        font-size: 1.8rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+}
+
+
+
